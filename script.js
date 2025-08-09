@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function loadPosts() {
         try {
             // --- THIS IS THE UPDATED LINE ---
-            const response = await fetch('https://blog-backend-1.onrender.com/api/posts');
+            const response = await fetch('https://blog-backend-1-r9bw.onrender.com/api/posts');
             
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             state.posts = await response.json();
